@@ -1,7 +1,10 @@
 package com.example.proyecto_vc;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -73,9 +76,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivityForResult(prox,0);
                 }
                 if (ck2.isChecked()==true){
-
-                   // Intent gusto = new Intent(MainActivity.this, Asugusto.class);
-                    //startActivityForResult(gusto, 0);
+                    Intent maps = new Intent(MainActivity.this, MapsActivity.class);
+                    startActivityForResult(maps, 0);
                 }
                 if (ck3.isChecked()==true){
                     Intent acel = new Intent(MainActivity.this, MainAcelerometro.class);
