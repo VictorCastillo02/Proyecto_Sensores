@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivityForResult(prox,0);
                 }
                 if (ck2.isChecked()==true){
-                    Intent maps = new Intent(MainActivity.this, MapsActivity.class);
+                    Intent maps = new Intent(MainActivity.this, MainLocalizacion.class);
                     startActivityForResult(maps, 0);
                 }
                 if (ck3.isChecked()==true){
