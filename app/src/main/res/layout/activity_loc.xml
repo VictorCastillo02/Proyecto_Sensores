@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EBF2">
+    android:background="@drawable/fondo">
 
     <TextView
         android:id="@+id/tvMensaje"
@@ -12,9 +12,9 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
-        android:background="#FFE0B2"
+        android:background="#9575CD"
         android:text="Ubicacion"
-        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColor="#FDFAFA"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"

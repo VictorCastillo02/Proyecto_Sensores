@@ -11,37 +11,33 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
-    private CheckBox ck1,ck2, ck3;
-    Button btn1, btn2, btn3;
+   TextView tv;
+    Button btn_inicio, btn_pre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        btn1 = (Button) findViewById(R.id.btn1);
-        btn2 = (Button) findViewById(R.id.btn2);
-        btn3 = (Button) findViewById(R.id.btn3);
+        setContentView(R.layout.activity_inicio);
+        btn_inicio = (Button) findViewById(R.id.btn_inicio);
+        btn_pre = (Button) findViewById(R.id.btn_pre);
+        tv = (TextView) findViewById(R.id.tv);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        btn_pre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent prox = new Intent(MainActivity.this, Proximidad.class);
-                startActivityForResult(prox,0);
+                Intent pre = new Intent(MainActivity.this, Presentacion.class);
+                startActivityForResult(pre,0);
             }
         });
-        btn2.setOnClickListener(new View.OnClickListener() {
+        btn_inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent maps = new Intent(MainActivity.this, MainLocalizacion.class);
-                startActivityForResult(maps, 0);
-            }
-        });
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent acel = new Intent(MainActivity.this, MainAcelerometro.class);
-                startActivityForResult(acel,0);
+                Intent selec = new Intent(MainActivity.this,Seleccion.class);
+                startActivityForResult(selec, 0);
             }
         });
     }

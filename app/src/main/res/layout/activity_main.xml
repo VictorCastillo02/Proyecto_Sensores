@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EBF2"
+    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtv"
         android:layout_width="387dp"
         android:layout_height="57dp"
-        android:background="#FFE0B2"
         android:text="Seleccione el sensor que desee utilizar:"
         android:textAlignment="center"
-        android:textColor="#100E0E"
+        android:textColor="#FBFBFB"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,23 +32,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/txtv"
         app:layout_constraintVertical_bias="0.299">
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/btn2"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="240dp"
             android:layout_height="53dp"
-            android:layout_marginBottom="76dp"
-            android:background="@drawable/diseno_boton4"
-            android:text="Acelerometro"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/diseno_boton3"
+            android:text="Ubicacion del Gps"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColor="#FAF6F6"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn3"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.552"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
@@ -61,29 +61,31 @@
             android:background="@drawable/diseno_boton2"
             android:text="Sensor de Aproximidad"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColor="#FAF6F6"
             android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/btn2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.611"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/btn3"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="240dp"
             android:layout_height="53dp"
-            android:layout_marginBottom="44dp"
-            android:background="@drawable/diseno_boton3"
-            android:text="Ubicacion del Gps"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/diseno_boton4"
+            android:text="Acelerometro"
             android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textColor="#FAF6F6"
             android:textSize="16dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/btn3"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.552"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

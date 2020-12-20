@@ -2,7 +2,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 //color fondo
     <solid
-        android:color="#FFE0B2"
+        android:color="#9575CD"
         />
     //Espacio
     <padding
@@ -14,5 +14,7 @@
     <corners
         android:bottomLeftRadius="100dp"
         android:topRightRadius="100dp"/>
-
+    <stroke
+        android:width="10px"
+        android:color="@android:color/white"/>
 </shape>
