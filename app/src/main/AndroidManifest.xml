@@ -45,6 +45,8 @@
         <activity android:name=".MainAcelerometro" />
         <activity android:name=".Proximidad" />
         <activity android:name=".MainLocalizacion" />
+        <activity android:name=".Seleccion" />
+        <activity android:name=".Presentacion" />
     </application>
 
 </manifest>
